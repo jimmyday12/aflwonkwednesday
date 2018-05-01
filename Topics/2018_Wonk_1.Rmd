@@ -1,0 +1,35 @@
+---
+title: "AFL Wednesday Wonk 1 - The Draw"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Wednesday Wonk 1
+
+Our initial Wednesday Wonk Topic is a topical one after Round 4 - the Draw! 
+
+A lot of chat this week about whether the draw should be kept in the AFL. There are lots of arguments to be had but there is also data! 
+
+This week we are asking you specifically to "mount an argument either for or against the draw using data".
+
+There is no right or wrong answer and lots of angles to attack this from
+
+## Data
+For those wanting the historical results of the AFL, you can use `fitzRoy` in R using the following code. 
+
+```{r data}
+library(fitzRoy)
+results <- get_match_results()
+
+head(results)
+```
+
+If you don't use R and just want a csv - find that [here](https://github.com/jimmyday12/aflwonkwednesday/blob/master/data/wonk1_match_results.csv). 
+
+All data is courtesy of [afltables](afltables.com) so please acknowledge appropriately. 
+
+### Submission
+There is no formal submission process. Just make sure you share you responses in the AFL Wonk Slack group, on Twitter (using the #AFLWonkWednesday hashtag) and/or, for those that way inclined, on your own blogs.

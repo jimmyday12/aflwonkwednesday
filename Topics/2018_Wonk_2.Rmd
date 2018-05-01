@@ -1,0 +1,40 @@
+---
+title: "AFL Wednesday Wonk 2 - Skills"
+author: "anoafl"
+date: "1 May 2018"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Wednesday Wonk #2
+
+What is going on with skills? 
+
+There has been a lot of chatter about the quality of skills and goal kicking in the AFL of late. [The greats](https://www.foxsports.com.au/afl/afl-greats-radical-solutions-to-fix-games-biggest-issues/news-story/ae0c00b49fd590f0f99a17d479aba800) have had their say. Goal kicking is at [HISTORIC](https://www.foxsports.com.au/afl/afl-goalkicking-continues-to-be-under-scrutiny-as-league-accuracy-falls-to-its-worst-since-1990/news-story/b01d958a5952a86e714e7ef0a41f75d5) lows (since 1990). The league is even on [scoring trend watch](http://www.afl.com.au/news/2018-05-01/leagues-watching-brief-as-scoring-rates-sink). 
+
+But what do the wonks think? 
+
+## Data 
+
+For those wanting the historical results of the AFL, you can use fitzRoy in R using the following code.
+
+```{r cars}
+# install.packages("devtools")
+# devtools::install_github("jimmyday12/fitzRoy")
+library(fitzRoy)
+results <- get_match_results()
+```
+
+```{r pressure, echo=FALSE}
+player_stats<-fitzRoy::player_stats
+```
+
+If you don't use R and just want a csv - find the [match results](https://github.com/jimmyday12/aflwonkwednesday/blob/master/data/wonk2_match_results.csv) and [player stats](https://github.com/jimmyday12/aflwonkwednesday/blob/master/data/wonk2_player_stats.csv) here. 
+
+All data is courtesy of afltables so please acknowledge appropriately.
+
+## Submission
+There is no formal submission process. Just make sure you share you responses in the AFL Wonk Slack group, on Twitter (using the #AFLWonkWednesday hashtag) and/or, for those that way inclined, on your own blogs.
